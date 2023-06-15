@@ -5,6 +5,6 @@ Docker
 С помощью Dockerfile создается docker-образ с сервером apache2 на основе ubuntu. На сервере apache запускаются 2 виртуальных хоста, каждый со своей ствтичной страничкой в формате html. Виртуальные хосты работают на нестандартных портах: 8080 и 3000. Необходимые для постоянного хранения данные сервера apache, такие как логи работы (/var/log/apache2) и страницы (/var/www/html) примонтированы к хост-системе с помощью volume.
 
 Для сборки docker-образа:
-      docker build -t apache_image:1.0
+            docker build -t apache_image:1.0
 Для запуска контейнера:
-      docker run --name my_apache -d -p 8080:8080 -p 3000:3000 apache_image:1.0
+            docker run --name my_apache -d -p 8080:8080 -p 3000:3000 apache_image:1.0
