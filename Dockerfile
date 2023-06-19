@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN apt update
 RUN apt install -y apache2
-RUN apt install -y apache-utils
+RUN apt install -y apache2-utils
 RUN mkdir /var/www/html/site1 /var/www/html/site2
 COPY index1.html /var/www/html/site1/index.html
 COPY index2.html /var/www/html/site2/index.html
